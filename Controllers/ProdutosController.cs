@@ -64,7 +64,7 @@ namespace DIO_Armazen.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["utilitarioId"] = new SelectList(_context.Utilitarios, "id", "id", produto.utilitarioId);
+            ViewData["utilitarioId"] = new SelectList(_context.Utilitarios, "id", "descricao", produto.utilitarioId);
             return View(produto);
         }
 
@@ -81,7 +81,7 @@ namespace DIO_Armazen.Controllers
             {
                 return NotFound();
             }
-            ViewData["utilitarioId"] = new SelectList(_context.Utilitarios, "id", "id", produto.utilitarioId);
+            ViewData["utilitarioId"] = new SelectList(_context.Utilitarios, "id", "descricao", produto.utilitarioId);
             return View(produto);
         }
 
@@ -117,7 +117,7 @@ namespace DIO_Armazen.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["utilitarioId"] = new SelectList(_context.Utilitarios, "id", "id", produto.utilitarioId);
+            ViewData["utilitarioId"] = new SelectList(_context.Utilitarios, "id", "descricao", produto.utilitarioId);
             return View(produto);
         }
 
