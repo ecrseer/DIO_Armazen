@@ -47,7 +47,7 @@ namespace DIO_Armazen.Controllers
         // GET: Produtos/Create
         public IActionResult Create()
         {
-            ViewData["utilitarioId"] = new SelectList(_context.Utilitarios, "id", "id");
+            ViewData["utilitarioId"] = new SelectList(_context.Utilitarios, "id", "descricao");
             return View();
         }
 
