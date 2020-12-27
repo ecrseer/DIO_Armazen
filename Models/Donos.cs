@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace DIO_Armazen.Models
 {
-    public class Utilitario
+    public class Donos
     {
         public int id { get; set; }
-        public string descricao { get; set; }
-        public List<Produto> produtos { get; set; }
+        public string nome { get; set; }
+        public float salario { get; set; }
     }
 }

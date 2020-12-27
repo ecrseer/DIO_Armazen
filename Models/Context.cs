@@ -9,6 +9,7 @@ namespace DIO_Armazen.Models
     public class Context : DbContext
     {
         public DbSet<Utilitario> Utilitarios { get; set; }
+        public DbSet<Produto> produtos { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             
