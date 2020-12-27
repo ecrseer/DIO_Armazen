@@ -10,6 +10,7 @@ namespace DIO_Armazen.Models
     {
         public int id { get; set; }
         [Display(Name ="Descrição")]
+        [Required(ErrorMessage =" Não pode ter um utilitario sem nome")]
         public string descricao { get; set; }
         public List<Produto> produtos { get; set; }
     }
