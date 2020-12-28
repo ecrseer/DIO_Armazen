@@ -12,7 +12,7 @@ namespace DIO_Armazen.Models
         public string descricao { get; set; }
 
        // [Range(1,32,ErrorMessage ="não compramos mais que 32 produtos iguais")]
-        //public int qtd { get; set; }
+        public int qtd { get; set; }
         public int utilitarioId { get; set; }
         public Utilitario utilitario { get; set; }
     }
